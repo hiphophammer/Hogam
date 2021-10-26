@@ -228,6 +228,5 @@ class chatbot(discord.Client):
                     chan = self.get_channel(comID)
                     await chan.send(z)
 
-
 client = chatbot()
 client.run(userToken, bot=False)
