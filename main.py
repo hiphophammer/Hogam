@@ -18,6 +18,7 @@ class chatbot(discord.Client):
             if (message.channel.id == testID) or (message.channel.id == survID):
                 async for msg in message.channel.history(limit=1):
                     txt = msg.content
+                    print(txt)
                     continent = ''
                     region = ''
                     result = []
@@ -73,7 +74,7 @@ class chatbot(discord.Client):
                                 region = '배꽃나무 자생지'
                             else:
                                 region = '미상'
-                    elif '베른' in txt:
+                    elif '베른' in txt and '자베른' not in txt:
                         if '남부' in txt:
                             continent = '베른 남부'
                             if '벨리' in txt:
@@ -138,7 +139,7 @@ class chatbot(discord.Client):
                             region = '리제 폭포'
                         else:
                             region = '미상'
-                    elif '슈샤이어' in txt or '슈샤' in txt:
+                    elif '슈샤' in txt:
                         continent = '슈샤이어'
                         if '얼어' in txt or '얼바' in txt:
                             region = '얼어붙은 바다'
@@ -222,8 +223,12 @@ class chatbot(discord.Client):
                     else:
                         result.append('영호')
                 z = ''.join(result)
-                chan = self.get_channel(comID)
-                await chan.send(z)
+
+                if continent:
+                    chan = self.get_channel(comID)
+                    await chan.send(z)
+
+
 
 
 client = chatbot()
