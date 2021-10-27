@@ -1,8 +1,8 @@
 import discord
 
 userToken = "OTAyNDUzNDk3Njg4MTIxMzU1.YXepsw.9swHXOulpgVjbRAdZSm4cnt7xqM"
-comID = 902550990891401227 # 통신 채널
-testID = 853670812472705048 # 테스팅 채널
+comID = 902772313261494343 # 통신 채널
+testID = 902772203144233020 # 테스팅 채널
 survID = 696329486131789945  # 감시할 채널
 
 
@@ -62,14 +62,16 @@ class chatbot(discord.Client):
                             continent = '루테란 동부'
                             if '크로' in txt:
                                 region = '크로커니스 해변'
-                            elif '해무리' in txt or '언덕' in txt:
+                            elif '해무리' in txt:
                                 region = '해무리 언덕'
-                            elif '보레' in txt or '영지' in txt:
+                            elif '보레아' in txt:
                                 region = '보레아 영지'
                             elif '라이아' in txt:
                                 region = '라이아 단구'
                             elif '흑장미' in txt:
                                 region = '흑장미 교회당'
+                            elif '디오' in txt:
+                                region = '디오리카 평원'
                             elif '배꽃' in txt:
                                 region = '배꽃나무 자생지'
                             else:
@@ -214,9 +216,9 @@ class chatbot(discord.Client):
                     else:
                         print('영호')
 
-                    result.append('대륙: ' + continent)
+                    result.append(continent)
                     result.append('\n')
-                    result.append('지역: ' + region)
+                    result.append(region)
                     result.append('\n')
                     if isLegendary:
                         result.append('전호')
