@@ -224,6 +224,11 @@ class chatbot(discord.Client):
                         result.append('전호')
                     else:
                         result.append('영호')
+                    result.append('\n')
+                    if isWei:
+                        result.append('True')
+                    else:
+                        result.append('False')
                 z = ''.join(result)
 
                 if continent:
