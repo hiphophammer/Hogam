@@ -1,7 +1,7 @@
 import discord
 
 userToken = "OTAyNDUzNDk3Njg4MTIxMzU1.YXepsw.9swHXOulpgVjbRAdZSm4cnt7xqM"
-comID = 902772313261494343 # 통신 채널
+comID = 902550990891401227 # 통신 채널
 testID = 902772203144233020 # 테스팅 채널
 survID = 696329486131789945  # 감시할 채널
 
