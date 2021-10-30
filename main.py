@@ -231,6 +231,10 @@ class chatbot(discord.Client):
     #             chan = self.get_channel(comID)
     #             await chan.send(z)
 
+    # async def on_reaction_add(self, reaction, user):
+    #     if user.bot:
+    #         if reaction.emoji == ""
+
     async def on_message(self, message):
         if message.author.bot:
             return None
