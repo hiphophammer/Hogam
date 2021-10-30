@@ -57,7 +57,7 @@ class chatbot(discord.Client):
                     region = '빌브린숲'
                 elif '격전' in txt or '평야' in txt:
                     region = '격전의 평야'
-                elif '메드' in txt or '수도' in txt or '매드리':
+                elif '메드' in txt or '수도' in txt or '매드리' in txt:
                     region = '메드리닉 수도원'
                 elif '레이크' in txt:
                     region = '레이크바'
