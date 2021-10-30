@@ -283,7 +283,7 @@ class chatbot(discord.Client):
 
                 if continent:
                     chan = self.get_channel(comID)
-                    # await chan.send(z)
+                    await chan.send(z)
 
 
 client = chatbot()
