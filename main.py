@@ -243,7 +243,7 @@ class chatbot(discord.Client):
             if (message.channel.id == testID) or (message.channel.id == survID):
                 async for msg in message.channel.history(limit=1):
                     txt = msg.content
-                    print(txt)
+                    print("passing " + txt + " to get_cont_region()...")
                     continent, region = self.get_cont_region(txt)
                     result = []
                     isLegendary = False
