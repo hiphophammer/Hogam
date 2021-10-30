@@ -281,7 +281,7 @@ class chatbot(discord.Client):
                         result.append('False')
                 z = ''.join(result)
 
-                if continent:
+                if continent != "UNID_CONT":
                     chan = self.get_channel(comID)
                     await chan.send(z)
 
