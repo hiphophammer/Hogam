@@ -193,7 +193,7 @@ class chatbot(discord.Client):
         elif '페이튼' in txt:
             continent = '페이튼'
             region = '칼라자 마을'
-        elif '파푸니카' in txt:
+        elif '파푸' in txt:
             continent = '파푸니카'
             if '바닷길' in txt or '얕바' in txt:
                 region = '얕은 바닷길'
