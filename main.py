@@ -205,6 +205,14 @@ class chatbot(discord.Client):
                 region = '비밀의 숲'
             else:
                 region = '미상'
+        elif '로웬' in txt:
+            continent = '로웬'
+            if '늑대' in txt or '웅크' in txt:
+                region = '웅크린 늑대의 땅'
+            elif '어금' in txt:
+                region = '어금니의 강'
+            else:
+                region = '미상'
         else:
             continent = 'UNID_CONT'
             region = 'UNID_REG'
